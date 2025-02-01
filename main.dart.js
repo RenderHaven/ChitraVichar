@@ -27203,7 +27203,7 @@ aPA(a){var s=0,r=A.G(t.P),q,p=2,o,n,m,l,k,j
 var $async$uA=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/product/get_products_by_category/"+a,0,null),null),$async$uA)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/product/get_products_by_category/"+a,0,null),null),$async$uA)
 case 7:n=c
 l=n
 A.ck(A.da(A.d9(l.e).c.a.h(0,"charset")).bA(l.w))
@@ -27238,7 +27238,7 @@ aPz(a){var s=0,r=A.G(t.P),q,p=2,o,n,m,l,k,j
 var $async$aco=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/product/get_product/"+a,0,null),null),$async$aco)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/product/get_product/"+a,0,null),null),$async$aco)
 case 7:n=c
 l=n
 A.ck(A.da(A.d9(l.e).c.a.h(0,"charset")).bA(l.w))
@@ -27275,7 +27275,7 @@ var $async$Nb=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:j=!0
 p=4
 s=7
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/item/get_item/"+a+"/"+A.i(j),0,null),null),$async$Nb)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/item/get_item/"+a+"/"+A.i(j),0,null),null),$async$Nb)
 case 7:n=c
 if(n.b===200){l=n
 l=B.P.bA(A.da(A.d9(l.e).c.a.h(0,"charset")).bA(l.w))
@@ -27308,7 +27308,7 @@ aPB(a){var s=0,r=A.G(t.b5),q,p=2,o,n,m,l,k,j,i
 var $async$acq=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/variation/get_variations_by_item/"+a,0,null),null),$async$acq)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/variation/get_variations_by_item/"+a,0,null),null),$async$acq)
 case 7:n=c
 if(n.b===200){k=n
 m=B.P.bA(A.da(A.d9(k.e).c.a.h(0,"charset")).bA(k.w))
@@ -27343,7 +27343,7 @@ acp(){var s=0,r=A.G(t.b5),q,p=2,o,n,m,l,k,j,i
 var $async$acp=A.C(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/product/get_products_of_gender/",0,null),null),$async$acp)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/product/get_products_of_gender/",0,null),null),$async$acp)
 case 7:n=b
 if(n.b===200){k=n
 m=B.P.bA(A.da(A.d9(k.e).c.a.h(0,"charset")).bA(k.w))
@@ -27381,7 +27381,7 @@ s=p}while(true)switch(s){case 0:p=4
 l=t.N
 k=t.yp
 A.ck("Sending request body: "+B.P.kD(A.a8(["product_ids",a],l,k)))
-j=A.bQ(" http://10.38.4.10:8080/product/get_items_by_productlist/Home",0,null)
+j=A.bQ("http://127.0.0.1:8080/product/get_items_by_productlist/Home",0,null)
 i=A.a8(["Content-Type","application/json"],l,l)
 s=7
 return A.I(A.Z3(j,B.P.kD(A.a8(["product_ids",a],l,k)),i),$async$acn)
@@ -27417,7 +27417,7 @@ return A.F($async$acn,r)},
 My(a){return A.aOS(a)},
 aOS(a){var s=0,r=A.G(t.P),q,p=2,o,n,m,l,k,j,i
 var $async$My=A.C(function(b,c){if(b===1){o=c
-s=p}while(true)switch(s){case 0:j=A.bQ(" http://10.38.4.10:8080/order/add",0,null)
+s=p}while(true)switch(s){case 0:j=A.bQ("http://127.0.0.1:8080/order/add",0,null)
 p=4
 l=t.N
 l=A.a8(["Content-Type","application/json"],l,l)
@@ -27446,7 +27446,7 @@ case 2:return A.D(o,r)}})
 return A.F($async$My,r)},
 abv(a){var s=0,r=A.G(t.y),q,p=2,o,n,m,l,k,j,i
 var $async$abv=A.C(function(b,c){if(b===1){o=c
-s=p}while(true)switch(s){case 0:j=A.bQ(" http://10.38.4.10:8080/order/delete/"+a,0,null)
+s=p}while(true)switch(s){case 0:j=A.bQ("http://127.0.0.1:8080/order/delete/"+a,0,null)
 p=4
 s=7
 return A.I(A.aHR(j),$async$abv)
@@ -27471,7 +27471,7 @@ case 2:return A.D(o,r)}})
 return A.F($async$abv,r)},
 abu(a){var s=0,r=A.G(t.b5),q,p=2,o,n,m,l,k,j,i
 var $async$abu=A.C(function(b,c){if(b===1){o=c
-s=p}while(true)switch(s){case 0:j=A.bQ(" http://10.38.4.10:8080/order/get_card_item/"+a,0,null)
+s=p}while(true)switch(s){case 0:j=A.bQ("http://127.0.0.1:8080/order/get_card_item/"+a,0,null)
 p=4
 s=7
 return A.I(A.oy(j,null),$async$abu)
@@ -27499,7 +27499,7 @@ case 2:return A.D(o,r)}})
 return A.F($async$abu,r)},
 aiB(a,b,c,d){var s=0,r=A.G(t.P),q,p,o,n,m
 var $async$aiB=A.C(function(e,f){if(e===1)return A.D(f,r)
-while(true)switch(s){case 0:p=A.bQ(" http://10.38.4.10:8080/user/register",0,null)
+while(true)switch(s){case 0:p=A.bQ("http://127.0.0.1:8080/user/register",0,null)
 o=t.N
 n=A.a8(["Content-Type","application/json"],o,o)
 s=3
@@ -27512,7 +27512,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$aiB,r)},
 aiA(a,b){var s=0,r=A.G(t.nA),q,p,o,n,m
 var $async$aiA=A.C(function(c,d){if(c===1)return A.D(d,r)
-while(true)switch(s){case 0:p=A.bQ(" http://10.38.4.10:8080/user/login",0,null)
+while(true)switch(s){case 0:p=A.bQ("http://127.0.0.1:8080/user/login",0,null)
 o=t.N
 n=A.a8(["Content-Type","application/json"],o,o)
 s=3
@@ -27525,7 +27525,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$aiA,r)},
 PH(a,b){var s=0,r=A.G(t.P),q,p,o,n,m,l,k
 var $async$PH=A.C(function(c,d){if(c===1)return A.D(d,r)
-while(true)switch(s){case 0:l=A.bQ(" http://10.38.4.10:8080/user/edit_user/"+b,0,null)
+while(true)switch(s){case 0:l=A.bQ("http://127.0.0.1:8080/user/edit_user/"+b,0,null)
 k=t.N
 k=A.a8(["Content-Type","application/json"],k,k)
 s=3
@@ -27553,7 +27553,7 @@ return A.F($async$PH,r)},
 aiz(a){var s=0,r=A.G(t.X7),q,p,o
 var $async$aiz=A.C(function(b,c){if(b===1)return A.D(c,r)
 while(true)switch(s){case 0:s=3
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/user/chk/"+a,0,null),null),$async$aiz)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/user/chk/"+a,0,null),null),$async$aiz)
 case 3:o=c
 if(o.b===200){p=B.P.hH(A.da(A.d9(o.e).c.a.h(0,"charset")).bA(o.w),null)
 if(p.ad("IsNew")){q=J.c(p.h(0,"IsNew"),"False")
@@ -27565,7 +27565,7 @@ aiy(a){var s=0,r=A.G(t.P),q,p,o
 var $async$aiy=A.C(function(b,c){if(b===1)return A.D(c,r)
 while(true)switch(s){case 0:p=t.N
 s=3
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/user/get_user/"+a,0,null),A.a8(["Content-Type","application/json"],p,p)),$async$aiy)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/user/get_user/"+a,0,null),A.a8(["Content-Type","application/json"],p,p)),$async$aiy)
 case 3:o=c
 if(o.b===200){q=B.P.hH(A.da(A.d9(o.e).c.a.h(0,"charset")).bA(o.w),null)
 s=1
@@ -27574,7 +27574,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$aiy,r)},
 aiw(a,b,c,d,e){var s=0,r=A.G(t.N),q,p,o,n,m
 var $async$aiw=A.C(function(f,g){if(f===1)return A.D(g,r)
-while(true)switch(s){case 0:p=A.bQ(" http://10.38.4.10:8080/user/add_address",0,null)
+while(true)switch(s){case 0:p=A.bQ("http://127.0.0.1:8080/user/add_address",0,null)
 o=t.N
 n=A.a8(["Content-Type","application/json"],o,o)
 s=3
@@ -27590,7 +27590,7 @@ aix(a){var s=0,r=A.G(t.b5),q,p,o
 var $async$aix=A.C(function(b,c){if(b===1)return A.D(c,r)
 while(true)switch(s){case 0:p=t.N
 s=3
-return A.I(A.oy(A.bQ(" http://10.38.4.10:8080/user/get_addresses/"+a,0,null),A.a8(["Content-Type","application/json"],p,p)),$async$aix)
+return A.I(A.oy(A.bQ("http://127.0.0.1:8080/user/get_addresses/"+a,0,null),A.a8(["Content-Type","application/json"],p,p)),$async$aix)
 case 3:o=c
 if(o.b===200){q=J.kq(J.cE(B.P.hH(A.da(A.d9(o.e).c.a.h(0,"charset")).bA(o.w),null),"addresses"),t.P)
 s=1
