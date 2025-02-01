@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/">
 
   <meta charset="UTF-8">
@@ -31,8 +18,47 @@
 
   <title>chitravihar</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+  <script>
+    // Initialize Firebase
+    const firebaseConfig = {
+      apiKey: "AIzaSyAkdN8VJZY87HyZ4yrcojCJ8wQxWGt-h2M",
+      authDomain: "chitraviharotp.firebaseapp.com",
+      projectId: "chitraviharotp",
+      storageBucket: "chitraviharotp.firebasestorage.app",
+      messagingSenderId: "593624237692",
+      appId: "1:593624237692:web:db90031f2f382c057febf9",
+      measurementId: "G-3563VD1V44"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Function to initialize reCAPTCHA properly
+    function setupReCAPTCHA() {
+      window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
+        size: 'normal',
+        callback: function(response) {
+          console.log('ReCAPTCHA verified');
+        }
+      });
+      recaptchaVerifier.render().then(function(widgetId) {
+        window.recaptchaWidgetId = widgetId;
+      });
+    }
+
+    window.onload = function() {
+      setupReCAPTCHA();
+    };
+  </script>
 </head>
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+
+<!-- This is required for Firebase Phone Authentication -->
+<div id="recaptcha-container"></div>
+
+<script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
