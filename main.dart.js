@@ -7602,7 +7602,7 @@ aRL(a){var s=0,r=A.G(t.P),q,p=2,o,n,m,l,k,j
 var $async$BE=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/product/get_products_by_category/"+a,0,null),null),$async$BE)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/product/get_products_by_category/"+a,0,null),null),$async$BE)
 case 7:n=c
 l=n
 A.bZ(A.dc(A.db(l.e).c.a.h(0,"charset")).bt(l.w))
@@ -7637,7 +7637,7 @@ aRK(a){var s=0,r=A.G(t.P),q,p=2,o,n,m,l,k,j
 var $async$ad9=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/product/get_product/"+a,0,null),null),$async$ad9)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/product/get_product/"+a,0,null),null),$async$ad9)
 case 7:n=c
 l=n
 A.bZ(A.dc(A.db(l.e).c.a.h(0,"charset")).bt(l.w))
@@ -7674,7 +7674,7 @@ s=p}while(true)switch(s){case 0:if(a.length<3){q=A.b([A.a3(["error","Query must 
 s=1
 break}p=4
 s=7
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/"+b+"/search?query="+a,0,null),null),$async$adc)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/"+b+"/search?query="+a,0,null),null),$async$adc)
 case 7:n=d
 k=n
 A.bZ("Search Response: "+A.dc(A.db(k.e).c.a.h(0,"charset")).bt(k.w))
@@ -7713,7 +7713,7 @@ var $async$ad7=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:j=!0
 p=4
 s=7
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/item/get_item/"+a+"/"+A.i(j),0,null),null),$async$ad7)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/item/get_item/"+a+"/"+A.i(j),0,null),null),$async$ad7)
 case 7:n=c
 if(n.b===200){l=n
 l=B.Q.bt(A.dc(A.db(l.e).c.a.h(0,"charset")).bt(l.w))
@@ -7746,7 +7746,7 @@ aRM(a){var s=0,r=A.G(t.b5),q,p=2,o,n,m,l,k,j,i
 var $async$adb=A.C(function(b,c){if(b===1){o=c
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/variation/get_variations_by_item/"+a,0,null),null),$async$adb)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/variation/get_variations_by_item/"+a,0,null),null),$async$adb)
 case 7:n=c
 if(n.b===200){k=n
 m=B.Q.bt(A.dc(A.db(k.e).c.a.h(0,"charset")).bt(k.w))
@@ -7781,7 +7781,7 @@ ada(){var s=0,r=A.G(t.b5),q,p=2,o,n,m,l,k,j,i
 var $async$ada=A.C(function(a,b){if(a===1){o=b
 s=p}while(true)switch(s){case 0:p=4
 s=7
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/product/get_products_of_gender/",0,null),null),$async$ada)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/product/get_products_of_gender/",0,null),null),$async$ada)
 case 7:n=b
 if(n.b===200){k=n
 m=B.Q.bt(A.dc(A.db(k.e).c.a.h(0,"charset")).bt(k.w))
@@ -7819,7 +7819,7 @@ s=p}while(true)switch(s){case 0:p=4
 l=t.N
 k=t.yp
 A.bZ("Sending request body: "+B.Q.kH(A.a3(["product_ids",a],l,k)))
-j=A.c3("http://127.0.0.1:10000/product/get_items_by_productlist/Home",0,null)
+j=A.c3("https://chitravichar-deploy.onrender.com/product/get_items_by_productlist/Home",0,null)
 i=A.a3(["Content-Type","application/json"],l,l)
 s=7
 return A.H(A.ZL(j,B.Q.kH(A.a3(["product_ids",a],l,k)),i),$async$ad8)
@@ -7854,7 +7854,7 @@ case 2:return A.D(o,r)}})
 return A.F($async$ad8,r)},
 ajh(a,b,c,d){var s=0,r=A.G(t.P),q,p,o,n,m
 var $async$ajh=A.C(function(e,f){if(e===1)return A.D(f,r)
-while(true)switch(s){case 0:p=A.c3("http://127.0.0.1:10000/user/register",0,null)
+while(true)switch(s){case 0:p=A.c3("https://chitravichar-deploy.onrender.com/user/register",0,null)
 o=t.N
 n=A.a3(["Content-Type","application/json"],o,o)
 s=3
@@ -7867,7 +7867,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$ajh,r)},
 ajg(a,b){var s=0,r=A.G(t.nA),q,p,o,n,m
 var $async$ajg=A.C(function(c,d){if(c===1)return A.D(d,r)
-while(true)switch(s){case 0:p=A.c3("http://127.0.0.1:10000/user/login",0,null)
+while(true)switch(s){case 0:p=A.c3("https://chitravichar-deploy.onrender.com/user/login",0,null)
 o=t.N
 n=A.a3(["Content-Type","application/json"],o,o)
 s=3
@@ -7880,7 +7880,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$ajg,r)},
 Q5(a,b){var s=0,r=A.G(t.P),q,p,o,n,m,l,k
 var $async$Q5=A.C(function(c,d){if(c===1)return A.D(d,r)
-while(true)switch(s){case 0:l=A.c3("http://127.0.0.1:10000/user/edit_user/"+b,0,null)
+while(true)switch(s){case 0:l=A.c3("https://chitravichar-deploy.onrender.com/user/edit_user/"+b,0,null)
 k=t.N
 k=A.a3(["Content-Type","application/json"],k,k)
 s=3
@@ -7909,7 +7909,7 @@ ajf(a){var s=0,r=A.G(t.P),q,p,o
 var $async$ajf=A.C(function(b,c){if(b===1)return A.D(c,r)
 while(true)switch(s){case 0:p=t.N
 s=3
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/user/get_user/"+a,0,null),A.a3(["Content-Type","application/json"],p,p)),$async$ajf)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/user/get_user/"+a,0,null),A.a3(["Content-Type","application/json"],p,p)),$async$ajf)
 case 3:o=c
 if(o.b===200){q=B.Q.hN(A.dc(A.db(o.e).c.a.h(0,"charset")).bt(o.w),null)
 s=1
@@ -7918,7 +7918,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$ajf,r)},
 ajb(a,b,c,d,e){var s=0,r=A.G(t.N),q,p,o,n,m
 var $async$ajb=A.C(function(f,g){if(f===1)return A.D(g,r)
-while(true)switch(s){case 0:p=A.c3("http://127.0.0.1:10000/user/add_address",0,null)
+while(true)switch(s){case 0:p=A.c3("https://chitravichar-deploy.onrender.com/user/add_address",0,null)
 o=t.N
 n=A.a3(["Content-Type","application/json"],o,o)
 s=3
@@ -7934,7 +7934,7 @@ ajd(a){var s=0,r=A.G(t.b5),q,p,o
 var $async$ajd=A.C(function(b,c){if(b===1)return A.D(c,r)
 while(true)switch(s){case 0:p=t.N
 s=3
-return A.H(A.oJ(A.c3("http://127.0.0.1:10000/user/get_addresses/"+a,0,null),A.a3(["Content-Type","application/json"],p,p)),$async$ajd)
+return A.H(A.oJ(A.c3("https://chitravichar-deploy.onrender.com/user/get_addresses/"+a,0,null),A.a3(["Content-Type","application/json"],p,p)),$async$ajd)
 case 3:o=c
 if(o.b===200){q=J.mA(J.b9(B.Q.hN(A.dc(A.db(o.e).c.a.h(0,"charset")).bt(o.w),null),"addresses"),t.P)
 s=1
@@ -7943,7 +7943,7 @@ case 1:return A.E(q,r)}})
 return A.F($async$ajd,r)},
 aje(a){var s=0,r=A.G(t.b5),q,p=2,o,n,m,l,k,j,i
 var $async$aje=A.C(function(b,c){if(b===1){o=c
-s=p}while(true)switch(s){case 0:j=A.c3("http://127.0.0.1:10000/user/get_card_item/"+a,0,null)
+s=p}while(true)switch(s){case 0:j=A.c3("https://chitravichar-deploy.onrender.com/user/get_card_item/"+a,0,null)
 p=4
 s=7
 return A.H(A.oJ(j,null),$async$aje)
@@ -7971,7 +7971,7 @@ case 2:return A.D(o,r)}})
 return A.F($async$aje,r)},
 aji(a){var s=0,r=A.G(t.y),q,p=2,o,n,m,l,k,j,i
 var $async$aji=A.C(function(b,c){if(b===1){o=c
-s=p}while(true)switch(s){case 0:j=A.c3("http://127.0.0.1:10000/user/remove_from_cart/"+a,0,null)
+s=p}while(true)switch(s){case 0:j=A.c3("https://chitravichar-deploy.onrender.com/user/remove_from_cart/"+a,0,null)
 p=4
 s=7
 return A.H(A.aK1(j),$async$aji)
@@ -7997,7 +7997,7 @@ return A.F($async$aji,r)},
 ajc(a){return A.aTI(a)},
 aTI(a){var s=0,r=A.G(t.P),q,p=2,o,n,m,l,k,j,i
 var $async$ajc=A.C(function(b,c){if(b===1){o=c
-s=p}while(true)switch(s){case 0:j=A.c3("http://127.0.0.1:10000/user/add_to_cart",0,null)
+s=p}while(true)switch(s){case 0:j=A.c3("https://chitravichar-deploy.onrender.com/user/add_to_cart",0,null)
 p=4
 l=t.N
 l=A.a3(["Content-Type","application/json"],l,l)
