@@ -30,13 +30,13 @@
 
           var options = {
               "key": paymentData.key,
-              "amount": paymentData.amount,
+              "amount": parseInt(paymentData.amount, 10),
               "currency": paymentData.currency,
               "name": paymentData.name,
               "description": paymentData.description,
               "order_id": paymentData.orderId,
               "handler": function (response) {
-                  window.parent.postMessage({ type: "paymentSuccess", paymentId: response.razorpay_payment_id }, "*");
+                  window.parent.postMessage({ type: "paymentSuccess"}, "*");
               },
               "prefill": {
                   "name": paymentData.prefill_name,
@@ -44,6 +44,13 @@
                   "contact": paymentData.prefill_contact
               },
               "theme": { "color": "#3399cc" }
+          };
+
+          options.modal = {
+            escape: false,
+            ondismiss: function () {
+              window.parent.postMessage({ type: "paymentFailed"}, "*");
+            },
           };
 
           console.log("Opening Razorpay with options:", options); // Debugging
