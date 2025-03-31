@@ -16,12 +16,44 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>chitravihar</title>
+  <title>ChitraVichar</title>
   <link rel="manifest" href="manifest.json">
 
-  <!-- Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    function openRazorpay(paymentDataString) { // Changed parameter name to indicate it might be a string
+      console.log("Received paymentData:", paymentDataString); // Log the raw string
+      try {
+          const paymentData = JSON.parse(paymentDataString); // Parse the JSON string into a JavaScript object
+          console.log("Parsed paymentData:", paymentData); // Log the parsed object
+          console.log("Received key:", paymentData.key); // Debugging
+
+          var options = {
+              "key": paymentData.key,
+              "amount": paymentData.amount,
+              "currency": paymentData.currency,
+              "name": paymentData.name,
+              "description": paymentData.description,
+              "order_id": paymentData.orderId,
+              "handler": function (response) {
+                  window.parent.postMessage({ type: "paymentSuccess", paymentId: response.razorpay_payment_id }, "*");
+              },
+              "prefill": {
+                  "name": paymentData.prefill_name,
+                  "email": paymentData.prefill_email,
+                  "contact": paymentData.prefill_contact
+              },
+              "theme": { "color": "#3399cc" }
+          };
+
+          console.log("Opening Razorpay with options:", options); // Debugging
+          var rzp = new Razorpay(options);
+          rzp.open();
+      } catch (error) {
+          console.error("Error parsing paymentData:", error);
+      }
+  }
+  </script>
 </head>
 <body>
 
