@@ -1,4 +1,7 @@
-routes:
-  - type: rewrite
-    source: "/(.*)"
-    destination: "/index.html"
+services:
+  - type: web
+    name: ChitraVichar  # Replace with your Render app name
+    env: static
+    routes:
+      - source: /(.*)
+        destination: /index.html
