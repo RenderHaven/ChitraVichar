@@ -1,5 +1,5 @@
 staticPublishPath: build/web
-routes:
-  - type: rewrite
-    source: /*
-    destination: /index.html
+redirects:
+  - source: "/(.*)"
+    destination: "/index.html"
+    type: rewrite
