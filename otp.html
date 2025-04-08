@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OTP Widget</title>
+</head>
+<body>
+<script type="text/javascript">
+    let configuration;
+
+    // 🟢 Receive config from parent
+    window.addEventListener("message", (event) => {
+      if (event.data && event.data.type === "initOtp") {
+        const args = event.data.args;
+        configuration = {
+          widgetId: args.widgetId,
+          tokenAuth: args.tokenAuth,
+          identifier: args.identifier,
+<!--          exposeMethods: "true",-->
+          success: (data) => {
+            console.log("OTP success", data);
+            parent.postMessage({ type: "otpSuccess", data }, "*");
+          },
+          failure: (error) => {
+            console.log("OTP failed", error);
+            parent.postMessage({ type: "otpFailure", error }, "*");
+          },
+        };
+        initSendOTP(configuration);
+      }
+    });
+</script>
+<script src="https://control.msg91.com/app/assets/otp-provider/otp-provider.js"></script>
+</body>
+</html>
