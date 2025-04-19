@@ -47437,7 +47437,7 @@ $1(a){var s=J.ah(a)
 return new A.k5(s.h(a,"id"),s.h(a,"street"),s.h(a,"city"),s.h(a,"state"),s.h(a,"zip_code"))},
 $S:470}
 A.asM.prototype={
-$1(a){var s=J.ah(a),r=s.h(a,"id"),q=s.h(a,"status")
+$1(a){var s=J.ah(a),r=s.h(a,"id"),q=J.d(s.h(a,"status"),"NEW")?"IN_PROGRESS":s.h(a,"status")
 return new A.hn(r,s.h(a,"address"),s.h(a,"total_price"),s.h(a,"datetime"),q)},
 $S:479}
 A.asN.prototype={
